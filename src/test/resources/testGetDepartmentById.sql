@@ -1,0 +1,2 @@
+insert into department (department_id, department_address, department_code, department_name) values (19, 'Auckland', 'DEPT19', 'MS')
+insert into department (department_id, department_address, department_code, department_name) values (20, 'Wellington', 'DEPT20', 'MSW') 
