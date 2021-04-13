@@ -1,0 +1,32 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: DEPT-SERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/organization
+    username: alexg
+    password: root
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+        ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+#  cloud:
+#    config:
+#      enabled: true
+#      uri: http://localhost:9193
+  zipkin:
+    base-url: http://127.0.0.1:9411/   
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
